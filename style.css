@@ -1,0 +1,490 @@
+@font-face{
+    font-family:Reckless;
+    src:url(./fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face{
+    font-family:Figtree;
+    src:url(./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+@font-face{
+    font-family:Midnight;
+    src:url(./fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    background:#FBF9EB;
+    overflow-x:hidden;
+}
+
+main{
+    width:100%;
+    min-height:100vh;
+    padding-top:70px;
+}
+
+nav{
+    width:100%;
+    background:#FFFEFB;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.8rem 1rem;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99999;
+    border-bottom:1px solid #00000020;
+}
+
+nav i{
+    font-size:2rem;
+    width:33%;
+}
+
+.nav-part-1{
+    display:none;
+}
+
+.nav-part-2{
+    width:22%;
+    display:flex;
+    justify-content:center;
+}
+
+.nav-part-2 img{
+    width:100%;
+    object-fit:cover;
+}
+
+.nav-part-3{
+    width:33%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:1rem;
+}
+
+.nav-part-3 h3{
+    display:none;
+}
+
+.nav-part-3 svg{
+    width:30px;
+    height:30px;
+}
+
+#section-1{
+    width:100%;
+    height:90vh;
+    background-image:url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=720);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    gap:1rem;
+    text-align:center;
+    padding:2rem 1rem;
+}
+
+#section-1 h1{
+    font-size:clamp(3.5rem,8vw,6rem);
+    font-family:Reckless;
+    color:#fff;
+    font-weight:300;
+}
+
+#section-1 p{
+    color:#fff;
+    font-family:Figtree;
+    font-size:1.1rem;
+    line-height:1.5;
+}
+
+#section-1 button{
+    padding:1rem;
+    border:none;
+    background:#2A2857;
+    color:#fff;
+    border-radius:1rem;
+    font-family:Figtree;
+    font-size:1rem;
+}
+
+#section-2{
+    width:100%;
+    padding:6rem 1rem;
+}
+
+.section2-text{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
+
+.section2-text h1{
+    width:100%;
+    font-size:clamp(2.3rem,8vw,6rem);
+    font-family:Reckless;
+    font-weight:300;
+    line-height:1;
+}
+
+.btn-1{
+    margin-top:4rem;
+    padding:0.3rem 1rem;
+    border:none;
+    background:#DAAEEA;
+    border-radius:1rem;
+    font-family:Midnight;
+    font-size:2rem;
+    rotate:-5deg;
+}
+
+.card-container{
+    width:100%;
+    margin-top:3rem;
+}
+
+.swiper{
+    width:100%;
+    overflow:visible;
+}
+
+.swiper-slide{
+    width:320px;
+}
+
+.card{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.card-top{
+    width:100%;
+    height:420px;
+    background:#C1EE91;
+    border-radius:1rem;
+    border:1px solid #000;
+    position:relative;
+    overflow:hidden;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.card-top img{
+    position:absolute;
+    width:90%;
+    height:90%;
+    object-fit:cover;
+    transition:0.3s;
+}
+
+.card:hover .card-top img{
+    scale:1.08;
+}
+
+.card-top-text{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    z-index:2;
+}
+
+.card-top-text button{
+    padding:0.2rem 0.6rem;
+    background:#fff;
+    border:1px solid #000;
+    border-radius:0.3rem;
+    font-family:Midnight;
+    font-size:1rem;
+}
+
+.card-top-text span{
+    font-family:Reckless;
+    font-size:1rem;
+}
+
+.card-btm-text{
+    background:#fff;
+    padding:0.5rem;
+    border-radius:0.4rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+    font-family:Reckless;
+}
+
+.card-btm{
+    display:flex;
+    flex-direction:column;
+    gap:0.8rem;
+}
+
+.card-btm h1{
+    font-family:Reckless;
+    font-size:2rem;
+    font-weight:300;
+}
+
+.card-btm h3{
+    font-family:Reckless;
+    font-size:1.4rem;
+    font-weight:300;
+}
+
+.card-btm p{
+    font-family:Figtree;
+    opacity:0.6;
+    line-height:1.5;
+}
+
+.btn-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:4rem;
+}
+
+.btm-btn{
+    padding:1rem 2rem;
+    border:none;
+    border-radius:1rem;
+    background:#2A2857;
+    color:#fff;
+    font-family:Figtree;
+    font-size:1rem;
+}
+
+footer{
+    width:100%;
+    background:#C9D8F5;
+    margin-top:6rem;
+    padding:5rem 1rem 2rem;
+}
+
+.footer-top{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+}
+
+.footer-newsletter h1{
+    font-family:Midnight;
+    font-size:2rem;
+    margin-bottom:2rem;
+}
+
+.footer-newsletter p{
+    font-family:Reckless;
+    font-size:2rem;
+    line-height:1;
+    margin-bottom:2rem;
+}
+
+.footer-newsletter form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.footer-newsletter input{
+    width:100%;
+    padding:1rem;
+    border-radius:1rem;
+    border:1px solid #000;
+    outline:none;
+    font-family:Figtree;
+}
+
+.footer-newsletter button{
+    width:100%;
+    padding:1rem;
+    border:none;
+    background:#2A2857;
+    color:#fff;
+    border-radius:1rem;
+    font-family:Figtree;
+}
+
+.footer-social{
+    display:flex;
+    gap:1rem;
+}
+
+.footer-social a{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:1px solid #000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#000;
+    text-decoration:none;
+    font-size:1.5rem;
+}
+
+.footer-links{
+    width:100%;
+    background:#2A2857;
+    margin-top:5rem;
+    padding:3rem 2rem;
+    border-radius:1.5rem;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:3rem;
+}
+
+.footer-col{
+    display:flex;
+    flex-direction:column;
+    gap:0.8rem;
+}
+
+.footer-col h2{
+    color:#fff;
+    font-family:Reckless;
+    font-size:2rem;
+    font-weight:300;
+    margin-bottom:1rem;
+}
+
+.footer-col a{
+    color:#C9C9D4;
+    text-decoration:none;
+    font-family:Figtree;
+}
+
+@media(min-width:768px){
+
+    .footer-newsletter form{
+        flex-direction:row;
+    }
+
+    .footer-newsletter input{
+        width:70%;
+    }
+
+    .footer-newsletter button{
+        width:220px;
+    }
+
+    .footer-links{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(min-width:1024px){
+
+    nav{
+        padding:0.8rem 2rem;
+    }
+
+    nav i{
+        display:none;
+    }
+
+    .nav-part-1{
+        width:30%;
+        display:flex;
+        gap:1.5rem;
+    }
+
+    .nav-part-1 h3{
+        font-family:Reckless;
+        font-size:1.5rem;
+        font-weight:300;
+    }
+
+    .nav-part-2{
+        width:6%;
+    }
+
+    .nav-part-3{
+        width:40%;
+        gap:1.5rem;
+    }
+
+    .nav-part-3 h3{
+        display:block;
+        font-family:Reckless;
+        font-size:1.3rem;
+        font-weight:300;
+        white-space:nowrap;
+    }
+
+    #section-1{
+        align-items:flex-start;
+        text-align:left;
+        padding:3rem 2rem;
+        background-image:url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=2250.0);
+    }
+
+    #section-1 h1{
+        width:25%;
+    }
+
+    #section-1 p{
+        width:25%;
+    }
+
+    #section-1 button{
+        padding:1rem 4rem;
+    }
+
+    .btn-1{
+        display:none;
+    }
+
+    .section2-text h1{
+        width:55%;
+    }
+
+    .swiper-slide{
+        width:420px;
+    }
+
+    .footer-top{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:flex-end;
+    }
+
+    .footer-newsletter{
+        width:70%;
+    }
+
+    .footer-newsletter p{
+        width:60%;
+        font-size:4rem;
+    }
+
+    .footer-links{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
